@@ -13,8 +13,8 @@ module.exports = {
       ],
     },
     env: {
-      apiUrl: "http://127.0.0.3:8003/api/v2/",
-      appUrl: "http://127.0.0.1:8000/",
+      apiUrl: "https://immo.kelway.in/api/",
+      appUrl: "https://immo.kelway.in/",
     },
     
   };
