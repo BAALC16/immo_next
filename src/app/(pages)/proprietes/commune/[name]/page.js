@@ -15,7 +15,7 @@ import React from "react";
   title: "Gird Full 3 Column || Homez - Real Estate NextJS Template",
 }; */
 
-const propertiesByCity = ({params}) => {
+const PropertiesByCity = ({params}) => {
 
     const [properties, setProperties] = useState([]);
 	const [propertyFeatures, setPropertyFeatures] = useState([]);
@@ -93,4 +93,4 @@ const propertiesByCity = ({params}) => {
     );
 };
 
-export default propertiesByCity;
+export default PropertiesByCity;

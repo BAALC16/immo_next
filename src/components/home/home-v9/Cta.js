@@ -17,7 +17,7 @@ const Cta = () => {
                 We only work with the best companies around the globe to survey
               </p>
               <Link href="#" className="ud-btn btn-thm">
-                S'inscrire <i className="fal fa-arrow-right-long" />
+                S&rsquo;inscrire <i className="fal fa-arrow-right-long" />
               </Link>
             </div>
           </div>

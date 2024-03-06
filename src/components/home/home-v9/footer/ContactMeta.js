@@ -16,7 +16,7 @@ const ContactMeta = () => {
 
   return (
     <>
-    <p className="text" style={{ textAlign: "center" }}>Besoin d'assistance ?</p>
+    <p className="text" style={{ textAlign: "center" }}>Besoin d&rsquo;assistance ?</p>
 
     <div className="row mb-4">
       {contactInfoList.map((contact, index) => (

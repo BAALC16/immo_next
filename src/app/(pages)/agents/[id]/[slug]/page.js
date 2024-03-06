@@ -91,7 +91,7 @@ const AgentSingle = ({params}) => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="agent-single-details mt30 pb30 bdrb1">
-                    <h6 className="fz17 mb30">A propos de l'agent</h6>
+                    <h6 className="fz17 mb30">A propos de l&rsquo;agent</h6>
                     <p className="text">
                       {agent.introduction}
                     </p>

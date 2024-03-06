@@ -18,7 +18,7 @@ const ContactInfo = () => {
 
   return (
     <>
-      <p className="info-title dark-color" style={{ textAlign: "center" }}>Besoin d'assistance ?</p>
+      <p className="info-title dark-color" style={{ textAlign: "center" }}>Besoin d&rsquo;assistance ?</p>
       {contactInfo.map((info) => (
         <div className="col-auto" key={info.id}>
           <div className="contact-info">
