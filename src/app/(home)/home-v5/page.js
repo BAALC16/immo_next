@@ -322,7 +322,7 @@ const Home_V5 = (data) => {
 								width={386}
 								height={271}
 								className="w-100 h-100 cover"
-								src={process.env.appUrl+'storage/' + blog.image}
+								src={process.env.appUrl+''+ blog.image}
 								alt="blog"
 							/>
 							</div>
