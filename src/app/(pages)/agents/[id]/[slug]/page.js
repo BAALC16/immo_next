@@ -31,7 +31,7 @@ const AgentSingle = ({params}) => {
     }, [])
 	  
     const queries = () => {
-        fetch('http://127.0.0.3:8003/api/v2/agents/'+params.id)
+        fetch(process.env.appUrl+'api/agents/'+params.id)
         .then((res) => res.json())
         .then((data) => {
             setAgent(data.data.agent);

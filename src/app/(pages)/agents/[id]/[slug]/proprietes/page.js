@@ -28,7 +28,7 @@ const AgentProperties = ({params}) => {
     }, [])
 	  
     const queries = () => {
-        fetch('http://127.0.0.3:8003/api/v2/agents/'+params.id+'/proprietes')
+        fetch(process.env.appUrl+'api/agents/'+params.id+'/proprietes')
         .then((res) => res.json())
         .then((data) => {
             setProperties(data.data.properties);

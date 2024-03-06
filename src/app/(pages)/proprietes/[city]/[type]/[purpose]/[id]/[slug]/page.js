@@ -45,7 +45,7 @@ const SingleV4 = ({params}) => {
     }, [])
 	  
     const queries = () => {
-        fetch('http://127.0.0.3:8003/api/v2/properties/'+params.id)
+        fetch(process.env.appUrl+'api/properties/'+params.id)
         .then((res) => res.json())
         .then((data) => {
             setProperty(data.data.property);

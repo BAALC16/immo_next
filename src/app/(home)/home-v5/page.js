@@ -45,7 +45,7 @@ const Home_V5 = (data) => {
     }, [])
 	  
     const queries = () => {
-        fetch('http://127.0.0.3:8003/api/v2/home')
+        fetch(process.env.appUrl+'api/home')
         .then((res) => res.json())
         .then((data) => {
 			setProperties(data.data.properties);

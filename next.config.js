@@ -10,6 +10,10 @@ module.exports = {
           port: '8000',
           pathname: '/**',
         },
+        {
+          hostname: 'immo.kelway.in',
+          pathname: '/**'
+        }
       ],
     },
     env: {

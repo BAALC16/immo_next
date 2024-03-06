@@ -28,7 +28,7 @@ const Rent = (data) => {
     }, [])
 	  
     const queries = () => {
-        fetch('http://127.0.0.3:8003/api/v2/rent')
+        fetch(process.env.appUrl+'api/rent')
         .then((res) => res.json())
         .then((data) => {
             setProperties(data.data.properties);

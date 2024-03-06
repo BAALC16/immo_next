@@ -23,7 +23,7 @@ const Agents = () => {
     }, [])
 	  
     const queries = () => {
-        fetch('http://127.0.0.3:8003/api/v2/agents')
+        fetch(process.env.appUrl+'api/agents')
         .then((res) => res.json())
         .then((data) => {
             setAgents(data.data.agents);

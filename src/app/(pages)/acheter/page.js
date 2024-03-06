@@ -28,7 +28,7 @@ const Buy = (data) => {
     }, [])
 	  
     const queries = () => {
-        fetch('http://127.0.0.3:8003/api/v2/buy')
+        fetch(process.env.appUrl+'api/buy')
         .then((res) => res.json())
         .then((data) => {
             setProperties(data.data.properties);

@@ -28,7 +28,7 @@ const PropertiesByType = ({params}) => {
     }, [])
 	  
     const queries = () => {
-        fetch('http://127.0.0.3:8003/api/v2/properties/type/'+params.name)
+        fetch(process.env.appUrl+'api/properties/type/'+params.name)
         .then((res) => res.json())
         .then((data) => {
             setProperties(data.data.properties);
