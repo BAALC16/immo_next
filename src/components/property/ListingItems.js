@@ -16,7 +16,7 @@ const ListingItems = ({data}) => {
                     width={382}
                     height={248}
                     className="w-100 h-100 cover"
-                    src={'http://127.0.0.1:8000/storage/property/floor/' + listing.floor_plan}
+                    src={process.env.appUrl+'storage/property/floor/' + listing.floor_plan}
                     alt="listings"
                 />
                 <div className="sale-sticker-wrap">

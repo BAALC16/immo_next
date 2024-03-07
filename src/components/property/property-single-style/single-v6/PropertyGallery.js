@@ -23,13 +23,13 @@ import Map from "./Map";
         setFloor(props.floor);
         setGal(props.gallery);
         gal?.forEach(element => {
-            images.push('http://127.0.0.1:8000/storage/property/gallery/' + element.name);
+            images.push(process.env.appUrl+'storage/property/gallery/' + element.name);
         });
     }, [props]);
     
-    images.push('http://127.0.0.1:8000/storage/property/floor/' + floor);
+    images.push(process.env.appUrl+'storage/property/floor/' + floor);
     gal?.forEach(element => {
-        images.push('http://127.0.0.1:8000/storage/property/gallery/' + element.name);
+        images.push(process.env.appUrl+'storage/property/gallery/' + element.name);
     });
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);

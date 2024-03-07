@@ -12,9 +12,9 @@ const GalleryBox = ({floor, gal}) => {
     
   ];
 
-    imageUrls.push('http://127.0.0.1:8000/storage/property/floor/' + floor);
+    imageUrls.push(process.env.appUrl+'storage/property/floor/' + floor);
     gal?.forEach(element => {
-        imageUrls.push('http://127.0.0.1:8000/storage/property/gallery/' + element.name);
+        imageUrls.push(process.env.appUrl+'storage/property/gallery/' + element.name);
     });
 
   return (

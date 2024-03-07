@@ -26,7 +26,7 @@ const FeaturedListings = ({ data, colstyle }) => {
                 height={248}
                 className="w-100  cover"
                 style={{ height: "230px" }} 
-                src={listing.image || 'http://127.0.0.1:8000/storage/property/floor/' + listing.floor_plan} 
+                src={listing.image || process.env.appUrl+'storage/property/floor/' + listing.floor_plan} 
                 alt="listings"
               />
               <div className="sale-sticker-wrap">
